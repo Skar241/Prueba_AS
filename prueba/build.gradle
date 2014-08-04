@@ -19,6 +19,6 @@ android {
 }
 
 dependencies {
-    compile project(':FacebookSDK')
+    compile project(':facebookSDK')
     compile 'com.android.support:appcompat-v7:+'
 }

@@ -55,11 +55,11 @@ Android Gradle projects use a different directory structure than ADT
 Eclipse projects. Here's how the projects were restructured:
 
 In FacebookSDK:
-* AndroidManifest.xml => FacebookSDK\src\main\AndroidManifest.xml
-* assets\ => FacebookSDK\src\main\assets\
-* libs\bolts.jar => FacebookSDK\libs\bolts.jar
-* res\ => FacebookSDK\src\main\res\
-* src\ => FacebookSDK\src\main\java\
+* AndroidManifest.xml => facebookSDK\src\main\AndroidManifest.xml
+* assets\ => facebookSDK\src\main\assets\
+* libs\bolts.jar => facebookSDK\libs\bolts.jar
+* res\ => facebookSDK\src\main\res\
+* src\ => facebookSDK\src\main\java\
 In prueba:
 * AndroidManifest.xml => prueba\src\main\AndroidManifest.xml
 * assets\ => prueba\src\main\assets\

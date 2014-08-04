@@ -1,2 +1,2 @@
-include ':FacebookSDK'
+include ':facebookSDK'
 include ':prueba'

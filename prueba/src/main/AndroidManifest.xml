@@ -24,6 +24,7 @@
             </intent-filter>
         </activity>
         <activity android:name="Conectar_FB"></activity>
+        <meta-data android:value="@string/app_id" android:name="com.facebook.sdk.ApplicationId"/>
     </application>
 
 </manifest>
