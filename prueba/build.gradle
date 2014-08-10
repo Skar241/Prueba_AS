@@ -1,24 +1,15 @@
-apply plugin: 'android'
-
-android {
-    compileSdkVersion 19
-    buildToolsVersion "20.0.0"
-
-    defaultConfig {
-        applicationId "com.example.prueba"
-        minSdkVersion 8
-        targetSdkVersion 19
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+        jcenter()
     }
-
-    buildTypes {
-        release {
-            runProguard false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
-        }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:0.12.+'
     }
 }
 
-dependencies {
-    compile project(':facebookSDK')
-    compile 'com.android.support:appcompat-v7:+'
+allprojects {
+    repositories {
+        jcenter()
+    }
 }

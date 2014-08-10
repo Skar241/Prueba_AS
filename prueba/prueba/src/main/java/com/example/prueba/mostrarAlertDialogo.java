@@ -11,7 +11,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class mostrarAlertDialogo extends Activity{
+public class mostrarAlertDialogo{
 	
 	ManejoDatos data;
 	String[]Tramites;
@@ -63,7 +63,7 @@ public class mostrarAlertDialogo extends Activity{
 	
 	public void LanzarActivity(){
 		Intent i = new Intent(context, Conectar_FB.class );
-        startActivity(i);
+        context.startActivity(i);
 	}
 	public void getPos(int position){
 		pos=position;
@@ -90,6 +90,7 @@ public class mostrarAlertDialogo extends Activity{
 	         public void onClick(DialogInterface dialog, int which) {
 	        	 int tmpPos;
 	        	 if(!Tramites[pos].endsWith(" *")){
+	        		 data.getTramiteToFacebook(Tramites[pos]);
 	        		 Tramites[pos]=Tramites[pos]+" *";
 	        		 Calendario.setAdapter(new ArrayAdapter<String>(context, R.layout.textview, Tramites));
 	        		 data.getTramites(Tramites);

@@ -69,6 +69,18 @@ public class ManejoDatos {
 		return fechas;
 	}
 	
+	public void getTramiteToFacebook(String tramiteEnFace){
+		SharedPreferences preferencias=context.getSharedPreferences("tFb",Context.MODE_PRIVATE);
+        Editor editor=preferencias.edit();
+        editor.putString("varfb", tramiteEnFace);
+        editor.commit();
+	}
+	
+	public String setTramiteToFacebook(Context context){
+		SharedPreferences prefe = context.getSharedPreferences("tFb",Context.MODE_PRIVATE);
+		return prefe.getString("varfb","");
+	}
+	
 	public String[] setFechasLimite(){
 		return fechasLimte;
 	}
